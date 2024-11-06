@@ -8,6 +8,8 @@ class HelloController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $name = 'jon';
+        $languages = ['HTML', 'CSS', 'JavaScript', 'PHP'];
+        return view('index', compact('name', 'languages'));
     }
 }
