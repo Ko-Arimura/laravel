@@ -28,3 +28,5 @@ Route::get('/products/{id}', [ProductController::class, 'show']);
 Route::get('/vendors/{id}', [VendorController::class, 'show']);
 Route::get('/requests/conform', [RequestController::class, 'create']);
 Route::get('/responses', [ResponseController::class, 'index']);
+Route::get('/vendors/create', [VendorController::class, 'create']);
+Route::post('/vendors/store', [VendorController::class, 'store'])->name('vendors.store');
